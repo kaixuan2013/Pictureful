@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="myApp" lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Pictureful - Event photo sharing made easy</title>
+
 	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -20,6 +21,11 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/ajax.js"></script>
 
+    <!-- angular and firebase js -->
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -31,7 +37,7 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
-<body id="home" class="homepage">
+<body ng-controller="userController" id="home" class="homepage">
 
     <header id="header">
         <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
@@ -1074,20 +1080,121 @@
         </div>
     </section><!--/#bottom-->
 
-<!-- instagram hashtag search test -->
+        <!-- feedback -->
     <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Give me a Feedback</h2>
+                <p class="text-center wow fadeInDown">Tell me what I should continue doing, start doing and stop doing...</p>
+            </div>
+        <div class="row">
+            <div class="text-center">
+                <button class="btn btn-success" ng-click="editFeedback('new')">
+                    <span class="glyphicon"></span>Click here to leave feedback.
+                  </button>
+              </div>
+
+                <div ng-show="edit">
+                <h3></h3>
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <label class="col-sm-4 control-label">Full Name:</label>
+                        <div class="col-sm-8">
+                        <input type="text" ng-model="newuser.fName" ng-disabled="!edit" placeholder="Your Full Name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-4 control-label">SMU Email:</label>
+                        <div class="col-sm-8">
+                        <input type="text" ng-model="newuser.email" ng-disabled="!edit" placeholder="johnappleseed@mitb.smu.edu.sg">
+                        </div>
+                      </div> 
+                      <div class="form-group">
+                        <label class="col-sm-4 control-label">School:</label>
+                        <div class="col-sm-8">
+                        <input type="text" ng-model="newuser.school" ng-disabled="!edit" placeholder="(MBA, MM, Bus, SS, Econ)">
+                        </div>
+                      </div> 
+                      <div class="form-group">
+                        <label class="col-sm-4 control-label">What should we start doing?</label>
+                        <div class="col-sm-8">
+                        <textarea name="start" rows="2" col="50" ng-model="newuser.start" ng-disabled="!edit" placeholder="You should start .."></textarea>
+                        </div>
+                      </div> 
+                        <div class="form-group">
+                        <label class="col-sm-4 control-label">What should we stop doing?</label>
+                        <div class="col-sm-8">
+                        <textarea name="stop" rows="2" col="50" ng-model="newuser.stop" ng-disabled="!edit" placeholder="You should stop .."></textarea>
+                        </div>
+                      </div> 
+                        <div class="form-group">
+                        <label class="col-sm-4 control-label">What should we continue doing?</label>
+                        <div class="col-sm-8">
+                        <textarea name="continue" rows="2" col="50" ng-model="newuser.continue" ng-disabled="!edit" placeholder="You should continue .."></textarea>
+                        </div>
+                      </div> 
+                        <div class="form-group">
+                        <label class="col-sm-4 control-label">What other recommendations do you have?</label>
+                        <div class="col-sm-8">
+                        <textarea name="other" rows="2" col="50" ng-model="newuser.other" ng-disabled="!edit" placeholder="You should also .."></textarea>
+                        </div>
+                      </div> 
+                    </form>
+
+                <div class="text-center">
+                    <button class="btn btn-success"  ng-click="save()">
+                    <span class="glyphicon glyphicon-save"></span>  Save Feedback
+                    </button>
+
+                    <hr>
+                    <input type="checkbox" ng-model="hide_table" ng-init="hide_table=false"> Show submitted feedback.
+                </div>
+                
+                <table ng-show="hide_table" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Full Name</th>
+                      <th class="hidden-xs hidden-sm">Email</th>
+                      <th>School</th>
+                      <th>Start</th>
+                      <th>Stop</th>
+                      <th>Continue</th>
+                      <th class="hidden-xs">Other</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="user in users">
+                      <td>{{ user.fName }}</td>
+                      <td class="hidden-xs hidden-sm">{{ user.email }}</td>
+                      <td>{{ user.school }}</td>
+                      <td>{{ user.start }}</td>
+                      <td>{{ user.stop }}</td>
+                      <td>{{ user.continue }}</td>
+                      <td class="hidden-xs">{{ user.other }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </hr>
+                </div>
+        </div>
+    </section>
+
+<!-- instagram hashtag search test -->
+    <section id="services">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Grab Hashtag (TEST)</h2>
                 <p class="text-center wow fadeInDown">Type in any hashtag and pictures associating with it will automagically appear!</p>
             </div>
-            <div id="w">
-                <section id="sform">
-                    <small>Note: No spaces or punctuation allowed. Searches are limited to one(1) keyword.</small>
-                    <input type="text" id="s" name="s" class="sfield" placeholder="Enter a search tag..." autocomplete="off">
-                </section>
-        
-                 <section id="photos"></section>
+            <div class="row">
+                <div id="w">
+                    <section id="sform">
+                        <small>Note: No spaces or punctuation allowed. Searches are limited to one(1) keyword.</small>
+                        <input type="text" id="s" name="s" class="sfield" placeholder="Enter a search tag..." autocomplete="off">
+                    </section>
+            
+                     <section id="photos"></section>
+                </div>
             </div>
         </div>
     </section>
@@ -1127,5 +1234,67 @@
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- script to record feedback to firebase -->
+<script>
+  var myApp = angular.module("myApp", ["firebase"]);
+  myApp.controller('userController', ['$scope', '$firebase',
+    function($scope, $firebase) {
+    $scope.newuser = {};
+    $scope.fName = '';
+    $scope.school = '';
+    $scope.email = '';
+    $scope.start = '';
+    $scope.stop = '';
+    $scope.continue = '';
+    $scope.others = '';
+
+    
+    // Here is where you update your Firebase URL. 
+    var theFirebaseURL = "https://pictureful.firebaseio.com";
+    
+    var ref = new Firebase(theFirebaseURL);
+    $scope.users = $firebase(ref.child("feedback")).$asArray(); 
+
+    $scope.edit = false;
+    $scope.error = false;
+    $scope.incomplete = false;  
+        
+    $scope.editFeedback = function(id) {
+        $scope.currentId = id;
+        if (id == 'new') {
+            $scope.edit = true;
+            $scope.incomplete = true;
+            $scope.newuser = {};
+            console.log("new feedback.");
+        } else {
+            $scope.edit = true;
+            $scope.newuser = $firebase(ref.child("feedback").child(id)).$asObject();
+            console.log("existing feedback.");
+        }
+    };
+    
+    $scope.save = function(){
+      //Add new if no index is passed in.
+      
+      if($scope.currentId=='new'){
+        $scope.users.$add($scope.newuser);
+      }
+      else{
+        $scope.newuser.$save();
+      }
+      $scope.edit = false;
+    };
+    
+    $scope.deleteFeedback = function(index){
+      $scope.users.$remove(index);
+      console.log("removing "+index);
+    }
+    
+    }]);
+
+
+    </script>
+
 </body>
 </html>
