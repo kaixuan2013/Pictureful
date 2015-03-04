@@ -1021,6 +1021,10 @@
 
                 <div ng-show="edit">
                 <h3></h3>
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                <div class="col-md-4">
                     <form class="form-horizontal">
                       <div class="form-group">
                         <label class="col-sm-4 control-label">Full Name:</label>
@@ -1065,6 +1069,10 @@
                         </div>
                       </div> 
                     </form>
+                </div>
+                <div class="col-md-4">
+                    </div>
+                </div><!-- row closing --> 
 
                 <div class="text-center">
                     <button class="btn btn-success"  ng-click="save()">
