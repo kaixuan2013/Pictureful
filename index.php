@@ -779,7 +779,13 @@
                             <li>Filters</li>
                             <li>Live slideshow</li>
                             <li>Download album</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="payment/initiate/29">Order Now</a></li>
+                            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="HQLXNGJTPDLPJ">
+                                <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                            <!--<li class="plan-purchase"><a class="btn btn-primary" href="#">Order Now</a></li>-->
                         </ul>
                     </div>
                 </div>
@@ -808,7 +814,13 @@
                             <li>Live slideshow</li>
                             <li>Download album</li>
                             <li>Photo ranking</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="payment/initiate/159">Order Now</a></li>
+                            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="YCZHFAESZXP2W">
+                                <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                            <!--<li class="plan-purchase"><a class="btn btn-default" href="#">Order Now</a></li>-->
                         </ul>
                     </div>
                 </div>

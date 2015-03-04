@@ -1,9 +1,0 @@
-    export ENV=debug
-    export PAYPAL_MODE=sandbox
-    export PAYPAL_CLIENT_ID=Af7fDZ4UmLt11doAV7dXAvaeV9SJT4qM_G_vC6pSdcnMs0EPzzzOlAPwJBhsXAZj4LHUGGZVpFhkNvbD
-    export PAYPAL_CLIENT_SECRET=EKAMpWk3DSJGvP79MaRANOoUCOX9Vwy1DRlKC3N4eJL7QSG4X_2AtFwXf8QFUznrkE1CQUDNbpM7ZmgZ
-    export FIREBASE_TOKEN=lZUFYLZEYPMa26EmjRkalcDzBI8xwlybspwT3H0A
-    export FIREBASE_URL=https://jimmysoh.firebaseio.com/
-    export APP_BASE_URL=http://localhost:3000/
-    export APP_PAYPAL_SUCCESS_CALLBACK=/payment/execute/
-    export APP_PAYPAL_CANCEL_CALLBACK=/payment/cancel/
