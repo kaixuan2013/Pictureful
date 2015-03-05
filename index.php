@@ -39,6 +39,8 @@
 
 <body ng-controller="userController" id="home" class="homepage">
 
+    <?php include_once("analyticstracking.php") ?>
+
     <header id="header">
         <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
             <div class="container">
@@ -76,7 +78,7 @@
                                 <div class="carousel-content">
                                     <h2>Capture precious moments of your <span>event</span></h2>
                                     <p>Now you can encourage interaction of the guests attending your event through sharing their personal selfies and photos at the event!</p>
-                                    <a class="btn btn-primary btn-lg" href="#services">Read More</a>
+                                    <a class="btn btn-primary btn-lg" href="#services">Try it Free!</a>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +93,7 @@
                                 <div class="carousel-content">
                                     <h2>Let your guests generate <span>buzz</span> for your events!</h2>
                                     <p>Save your pockets on photographers, let your guests do what they do best! Follow these few simple steps and you will be up and running with pictureful in no time!</p>
-                                    <a class="btn btn-primary btn-lg" href="#work-process">Read More</a>
+                                    <a class="btn btn-primary btn-lg" href="#work-process">Try it Free!</a>
                                 </div>
                             </div>
                         </div>
@@ -278,96 +280,96 @@
             <div class="text-center">
                 <ul class="portfolio-filter">
                     <!-- <li><a class="active" href="#" data-filter="*">All Works</a></li> -->
-                    <li><a class="active" href="#" data-filter=".creative">Popular</a></li>
-                    <li><a href="#" data-filter=".corporate">Recent</a></li>
-                    <li><a href="#" data-filter=".portfolio">Near You</a></li>
+                    <li><a class="active" href="#" data-filter=".popular">Popular</a></li>
+                    <li><a href="#" data-filter=".recent">Recent</a></li>
+                    <li><a href="#" data-filter=".nearby">Near You</a></li>
                 </ul><!--/#portfolio-filter-->
             </div>
 
             <div class="portfolio-items">
-                <div class="portfolio-item creative">
+                <div class="portfolio-item recent">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/global_security_asia_2015.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 1</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>Global Security Asia 2015</h3>
+                            #globalsecurityasia2015
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item corporate portfolio">
+                <div class="portfolio-item popular recent">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/motorshow2015.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 2</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>Singapore Motor Show 2015</h3>
+                            #sgmotorshow2015
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item creative">
+                <div class="portfolio-item popular">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/silosobeachparty2014.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 3</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>Siloso Beach Party 2014</h3>
+                            #silosobeachparty2014
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item corporate">
+                <div class="portfolio-item popular">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/comex2014.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 4</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>Comex 2014</h3>
+                            #comex2014
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item creative portfolio">
+                <div class="portfolio-item popular nearby">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/alizafar_musicconcert.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 5</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>Ali Zafar Music Concert</h3>
+                            #alizafarconcert2014
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item corporate">
+                <div class="portfolio-item nearby">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/nationalday2014.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 5</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>Singapore National Day 2014</h3>
+                            #sgbday2014
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item creative portfolio">
+                <div class="portfolio-item popular">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/singaporeyouthawards2014.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 7</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>Singapore Youth Awards 2014</h3>
+                            #sya2014
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item corporate">
+                <div class="portfolio-item recent">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/USS-Halloween-Horror-Night-2014.jpg" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 8</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>USS Halloween Horror Night 2014</h3>
+                            #usshalloween2014
                             <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -422,11 +424,11 @@
         </div>
     </section><!--/#about-->
 
-    <section id="work-process">
+     <section id="work-process">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Our Process</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title text-center wow fadeInDown">Pictureful Process</h2>
+                <p class="text-center wow fadeInDown">Easy steps to get you up and running with Pictureful!</p>
             </div>
 
             <div class="row text-center">
@@ -434,54 +436,54 @@
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
                         <div class="icon-circle">
                             <span>1</span>
-                            <i class="fa fa-coffee fa-2x"></i>
+                            <i class="fa fa-star fa-2x"></i>
                         </div>
-                        <h3>MEET</h3>
+                        <h3>REGISTER ACCOUNT</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                         <div class="icon-circle">
                             <span>2</span>
-                            <i class="fa fa-bullhorn fa-2x"></i>
+                            <i class="fa fa-tag fa-2x"></i>
                         </div>
-                        <h3>PLAN</h3>
+                        <h3>CHOOSE HASHTAG</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
                         <div class="icon-circle">
                             <span>3</span>
-                            <i class="fa fa-image fa-2x"></i>
+                            <i class="fa fa-clock-o fa-2x"></i>
                         </div>
-                        <h3>DESIGN</h3>
+                        <h3>SPECIFY TIMEFRAME</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="icon-circle">
                             <span>4</span>
-                            <i class="fa fa-heart fa-2x"></i>
+                            <i class="fa fa-bullhorn fa-2x"></i>
                         </div>
-                        <h3>DEVELOP</h3>
+                        <h3>TELL ATTENDEES</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="400ms">
                         <div class="icon-circle">
                             <span>5</span>
-                            <i class="fa fa-shopping-cart fa-2x"></i>
+                            <i class="fa fa-beer fa-2x"></i>
                         </div>
-                        <h3>TESTING</h3>
+                        <h3>EXECUTE EVENT</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
                         <div class="icon-circle">
                             <span>6</span>
-                            <i class="fa fa-space-shuttle fa-2x"></i>
+                            <i class="fa fa-play-circle fa-2x"></i>
                         </div>
-                        <h3>LAUNCH</h3>
+                        <h3>LIVE SLIDESHOW</h3>
                     </div>
                 </div>
             </div>
@@ -1080,14 +1082,17 @@
                     </button>
 
                     <hr>
-                    <input type="checkbox" ng-model="hide_table" ng-init="hide_table=false"> Show submitted feedback.
+                    <input type="checkbox" ng-model="hide_table" ng-init="hide_table=false"> Show submitted feedback ({{ users.length }}).
                 </div>
                 
                 <table ng-show="hide_table" class="table table-striped">
                   <thead>
                     <tr>
+                    <!--
                       <th>Full Name</th>
                       <th class="hidden-xs hidden-sm">Email</th>
+                      -->
+                      <th>#</th>
                       <th>School</th>
                       <th>Start</th>
                       <th>Stop</th>
@@ -1097,8 +1102,11 @@
                   </thead>
                   <tbody>
                     <tr ng-repeat="user in users">
+                    <!--
                       <td>{{ user.fName }}</td>
                       <td class="hidden-xs hidden-sm">{{ user.email }}</td>
+                      !-->
+                      <td>{{ $index + 1 }}</td>
                       <td>{{ user.school }}</td>
                       <td>{{ user.start }}</td>
                       <td>{{ user.stop }}</td>
@@ -1116,7 +1124,7 @@
     <section id="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Grab Hashtag (TEST)</h2>
+                <h2 class="section-title text-center wow fadeInDown">Grab Hashtag (for fun!)</h2>
                 <p class="text-center wow fadeInDown">Type in any hashtag and pictures associating with it will automagically appear!</p>
             </div>
             <div class="row">
@@ -1142,6 +1150,7 @@
                     <ul class="social-icons">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <!--
                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                         <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
@@ -1149,7 +1158,8 @@
                         <li><a href="#"><i class="fa fa-flickr"></i></a></li>
                         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                        -->
+                        <li><a href="https://github.com/kaixuan2013/Pictureful"><i class="fa fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>
