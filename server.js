@@ -10,8 +10,7 @@ var intervalID;
 var hashTag = 'picturefultest';
 
 // using php-express to route php files using expressJS
-http = require('http'),
-    path = require('path'),
+path = require('path')
  
     // require php-express and config
     phpExpress = require('php-express')({
@@ -19,7 +18,6 @@ http = require('http'),
     });
  
 // init express
-app.set('port', process.env.PORT || 3000);
 app.use(express.bodyParser());  // body parser is required!!
  
  
