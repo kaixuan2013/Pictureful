@@ -8,28 +8,28 @@
     <title>Pictureful - Event photo sharing made easy</title>
 
 	<!-- core CSS -->
-    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../public/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../public/css/animate.min.css" rel="stylesheet">
-    <link href="../public/css/owl.carousel.css" rel="stylesheet">
-    <link href="../public/css/owl.transitions.css" rel="stylesheet">
-    <link href="../public/css/prettyPhoto.css" rel="stylesheet">
-    <link href="../public/css/main.css" rel="stylesheet">
-    <link href="../public/css/responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
 
-    <link href="../public/css/custom.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="../public/js/ajax.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
 
     <!--[if lt IE 9]>
-    <script src="../public/js/html5shiv.js"></script>
-    <script src="../public/js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="../public/images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../public/images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../public/images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../public/images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../public/images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
 <body id="home" class="homepage">
@@ -44,7 +44,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php"><img src="../public/images/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="logo"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
@@ -67,7 +67,7 @@
 	            </div>
 	            <div class="text-center">
 		            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-			            <form class="form-horizontal" action="views/album.php" method="POST">
+			            <form class="form-horizontal" action="http://pictureful-realtime.herokuapp.com/album.html">
 		                      <div class="form-group">
 		                        <input type="text" class="form-control input-lg" placeholder="#hashtag">
 		                      </div>
@@ -81,16 +81,16 @@
         </div>
     </section>
 
-    <script src="../public/js/jquery.js"></script>
-    <script src="../public/js/bootstrap.min.js"></script>
-    <script src="../public/js/owl.carousel.min.js"></script>
-    <script src="../public/js/mousescroll.js"></script>
-    <script src="../public/js/smoothscroll.js"></script>
-    <script src="../public/js/jquery.prettyPhoto.js"></script>
-    <script src="../public/js/jquery.isotope.min.js"></script>
-    <script src="../public/js/jquery.inview.min.js"></script>
-    <script src="../public/js/wow.min.js"></script>
-    <script src="../public/js/main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

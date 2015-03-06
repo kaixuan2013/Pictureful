@@ -8,33 +8,33 @@
     <title>Pictureful - Event photo sharing made easy</title>
 
 	<!-- core CSS -->
-    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../public/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../public/css/animate.min.css" rel="stylesheet">
-    <link href="../public/css/owl.carousel.css" rel="stylesheet">
-    <link href="../public/css/owl.transitions.css" rel="stylesheet">
-    <link href="../public/css/prettyPhoto.css" rel="stylesheet">
-    <link href="../public/css/main.css" rel="stylesheet">
-    <link href="../public/css/responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
 
-    <link href="../public/css/custom.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="../public/js/ajax.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
 
     <!-- angular and firebase js -->
-    <script src= "http://ajax.googleapis.com/ajax/libs/angular/js/1.2.26/angular.min.js"></script>
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
 
     <!--[if lt IE 9]>
-    <script src="../public/js/html5shiv.js"></script>
-    <script src="../public/js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="../public/images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../public/images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../public/images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../public/images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../public/images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
 <body ng-controller="userController" id="home" class="homepage">
@@ -51,7 +51,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php"><img src="../public/images/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="logo"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
@@ -70,7 +70,7 @@
 
     <section id="main-slider">
         <div class="owl-carousel">
-            <div class="item" style="background-image: url(../public/images/slider/bg2.jpg);">
+            <div class="item" style="background-image: url(images/slider/bg2.jpg);">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </div><!--/.item-->
-             <div class="item" style="background-image: url(../public/images/slider/bg1.jpg);">
+             <div class="item" style="background-image: url(images/slider/bg1.jpg);">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
@@ -126,7 +126,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-6 wow fadeInLeft">
-                    <img class="img-responsive" src="../public/images/main-feature.png" alt="">
+                    <img class="img-responsive" src="images/main-feature.png" alt="">
                 </div>
                 <div class="col-sm-6">
                     <div class="media service-box wow fadeInRight">
@@ -179,7 +179,7 @@
                 <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>MULTI</span> IS A CREATIVE HTML TEMPLATE</h2>
                 <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">Mauris pretium auctor quam. Vestibulum et nunc id nisi fringilla <br />iaculis. Mauris pretium auctor quam.</p>
                 <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms"><a class="btn btn-primary btn-lg" href="#">Free Download</a></p>
-                <img class="img-responsive wow fadeIn" src="../public/images/cta2/cta2-img.png" alt="" data-wow-duration="300ms" data-wow-delay="300ms">
+                <img class="img-responsive wow fadeIn" src="images/cta2/cta2-img.png" alt="" data-wow-duration="300ms" data-wow-delay="300ms">
             </div>
         </div>
     </section>
@@ -289,88 +289,88 @@
             <div class="portfolio-items">
                 <div class="portfolio-item recent">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="../public/images/portfolio/global_security_asia_2015.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/global_security_asia_2015.jpg" alt="">
                         <div class="portfolio-info">
                             <h3>Global Security Asia 2015</h3>
                             #globalsecurityasia2015
-                            <a class="preview" href="../public/images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item popular recent">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="../public/images/portfolio/motorshow2015.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/motorshow2015.jpg" alt="">
                         <div class="portfolio-info">
                             <h3>Singapore Motor Show 2015</h3>
                             #sgmotorshow2015
-                            <a class="preview" href="../public/images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item popular">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="../public/images/portfolio/silosobeachparty2014.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/silosobeachparty2014.jpg" alt="">
                         <div class="portfolio-info">
                             <h3>Siloso Beach Party 2014</h3>
                             #silosobeachparty2014
-                            <a class="preview" href="../public/images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item popular">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="../public/images/portfolio/comex2014.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/comex2014.jpg" alt="">
                         <div class="portfolio-info">
                             <h3>Comex 2014</h3>
                             #comex2014
-                            <a class="preview" href="../public/images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item popular nearby">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="../public/images/portfolio/alizafar_musicconcert.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/alizafar_musicconcert.jpg" alt="">
                         <div class="portfolio-info">
                             <h3>Ali Zafar Music Concert</h3>
                             #alizafarconcert2014
-                            <a class="preview" href="../public/images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item nearby">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="../public/images/portfolio/nationalday2014.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/nationalday2014.jpg" alt="">
                         <div class="portfolio-info">
                             <h3>Singapore National Day 2014</h3>
                             #sgbday2014
-                            <a class="preview" href="../public/images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item popular">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="../public/images/portfolio/singaporeyouthawards2014.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/singaporeyouthawards2014.jpg" alt="">
                         <div class="portfolio-info">
                             <h3>Singapore Youth Awards 2014</h3>
                             #sya2014
-                            <a class="preview" href="../public/images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item recent">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="../public/images/portfolio/USS-Halloween-Horror-Night-2014.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/USS-Halloween-Horror-Night-2014.jpg" alt="">
                         <div class="portfolio-info">
                             <h3>USS Halloween Horror Night 2014</h3>
                             #usshalloween2014
-                            <a class="preview" href="../public/images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/full.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -501,7 +501,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="../public/images/team/01.jpg" alt="">
+                            <img class="img-responsive" src="images/team/01.jpg" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Bin Burhan</h3>
@@ -519,7 +519,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="../public/images/team/02.jpg" alt="">
+                            <img class="img-responsive" src="images/team/02.jpg" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Jane Man</h3>
@@ -537,7 +537,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="../public/images/team/03.jpg" alt="">
+                            <img class="img-responsive" src="images/team/03.jpg" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Pahlwan</h3>
@@ -555,7 +555,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="../public/images/team/04.jpg" alt="">
+                            <img class="img-responsive" src="images/team/04.jpg" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Nasir uddin</h3>
@@ -839,13 +839,13 @@
                         <!- Wrapper for slides ->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <p><img class="img-circle img-thumbnail" src="../public/images/testimonial/01.jpg" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="images/testimonial/01.jpg" alt=""></p>
                                 <h4>Louise S. Morgan</h4>
                                 <small>Treatment, storage, and disposal (TSD) worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                             <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="../public/images/testimonial/01.jpg" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="images/testimonial/01.jpg" alt=""></p>
                                 <h4>Louise S. Morgan</h4>
                                 <small>Treatment, storage, and disposal (TSD) worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -882,7 +882,7 @@
                         <article>
                             <header class="entry-header">
                                 <div class="entry-thumbnail">
-                                    <img class="img-responsive" src="../public/images/blog/01.jpg" alt="">
+                                    <img class="img-responsive" src="images/blog/01.jpg" alt="">
                                     <span class="post-format post-format-video"><i class="fa fa-film"></i></span>
                                 </div>
                                 <div class="entry-date">25 November 2014</div>
@@ -906,7 +906,7 @@
                     <div class="blog-post blog-media wow fadeInRight" data-wow-duration="300ms" data-wow-delay="100ms">
                         <article class="media clearfix">
                             <div class="entry-thumbnail pull-left">
-                                <img class="img-responsive" src="../public/images/blog/02.jpg" alt="">
+                                <img class="img-responsive" src="images/blog/02.jpg" alt="">
                                 <span class="post-format post-format-gallery"><i class="fa fa-image"></i></span>
                             </div>
                             <div class="media-body">
@@ -931,7 +931,7 @@
                     <div class="blog-post blog-media wow fadeInRight" data-wow-duration="300ms" data-wow-delay="200ms">
                         <article class="media clearfix">
                             <div class="entry-thumbnail pull-left">
-                                <img class="img-responsive" src="../public/images/blog/03.jpg" alt="">
+                                <img class="img-responsive" src="images/blog/03.jpg" alt="">
                                 <span class="post-format post-format-audio"><i class="fa fa-music"></i></span>
                             </div>
                             <div class="media-body">
@@ -1166,17 +1166,17 @@
         </div>
     </footer><!--/#footer-->
 
-    <script src="../public/js/jquery.js"></script>
-    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="../public/js/owl.carousel.min.js"></script>
-    <script src="../public/js/mousescroll.js"></script>
-    <script src="../public/js/smoothscroll.js"></script>
-    <script src="../public/js/jquery.prettyPhoto.js"></script>
-    <script src="../public/js/jquery.isotope.min.js"></script>
-    <script src="../public/js/jquery.inview.min.js"></script>
-    <script src="../public/js/wow.min.js"></script>
-    <script src="../public/js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
 
     <!-- script to record feedback to firebase -->
 <script>
