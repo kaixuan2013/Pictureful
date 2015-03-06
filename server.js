@@ -14,7 +14,7 @@ http = require('http'),
     path = require('path'),
  
     // require php-express and config
-    phpExpress = require('../')({
+    phpExpress = require('php-express')({
         binPath: '/usr/bin/php' // php bin path.
     });
  
