@@ -9,6 +9,16 @@ var intervalID;
 
 var hashTag = 'picturefultest';
 
+// routes to index.php
+app.get('/', function (req, res) {
+  res.render('index', {});
+});
+
+// routes to hashtag.php
+app.get('/hashtag.php', function (req, res) {
+  res.render('hashtag', {});
+});
+
 /**
  * Set the paths for your files
  * @type {[string]}
