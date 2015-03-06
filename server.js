@@ -9,14 +9,25 @@ var intervalID;
 
 var hashTag = 'picturefultest';
 
-// routes to index.php
-app.get('/', function (req, res) {
-  res.render('index', {});
+// using php-express to route php files using expressJS
+var phpExpress = require('php-express')({
+ 
+  // assumes php is in your PATH
+  binPath: 'php'
 });
-
-// routes to hashtag.php
-app.get('/hashtag.php', function (req, res) {
-  res.render('hashtag', {});
+ 
+// set view engine to php-express
+app.set('views', './views');
+app.engine('php', phpExpress.engine);
+app.set('view engine', 'php');
+ 
+// routing all .php file to php-express
+app.all(/.+\.php$/, phpExpress.router);
+ 
+var server = app.listen(3000, function () {
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log('PHPExpress app listening at http://%s:%s', host, port);
 });
 
 /**
