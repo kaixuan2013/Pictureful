@@ -28,8 +28,8 @@ var clientID = '0072f330b5d449cf8fe3820dcc5e5476',
  */
 Instagram.set('client_id', clientID);
 Instagram.set('client_secret', clientSecret);
-Instagram.set('callback_url', 'http://pictureful-realtime.herokuapp.com/album.php/callback');
-Instagram.set('redirect_uri', 'http://pictureful-realtime.herokuapp.com/album.php');
+Instagram.set('callback_url', 'http://pictureful.herokuapp.com/album.php/callback');
+Instagram.set('redirect_uri', 'http://pictureful.herokuapp.com/album.php');
 Instagram.set('maxSockets', 10);
 
 /**
@@ -41,7 +41,7 @@ Instagram.subscriptions.subscribe({
   object: 'tag',
   object_id: hashTag,
   aspect: 'media',
-  callback_url: 'http://pictureful-realtime.herokuapp.com/album.php/callback',
+  callback_url: 'http://pictureful.herokuapp.com/album.php/callback',
   type: 'subscription',
   id: '#'
 });

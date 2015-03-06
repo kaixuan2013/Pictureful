@@ -20,7 +20,7 @@
 
 	<!-- css -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="../public/css/app.css">
     <link href="../public/css/bootstrap.min.css" rel="stylesheet">
     <link href="../public/css/font-awesome.min.css" rel="stylesheet">
     <link href="../public/css/animate.min.css" rel="stylesheet">
@@ -35,9 +35,9 @@
     <script type="text/javascript" src="../public/js/ajax.js"></script>
 
 	<!-- script -->
-	<script src="/js/socket.io.min.js"></script>
-	<script src="/js/jquery.1.9.min.js"></script>
-	<script src="/js/handlebarsjs.1.0.min.js"></script>
+	<script src="../public/js/socket.io.min.js"></script>
+	<script src="../public/js/jquery.1.9.min.js"></script>
+	<script src="../public/js/handlebarsjs.1.0.min.js"></script>
 
 
 	<!--[if lt IE 9]>
@@ -71,7 +71,7 @@
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="index.php">Home</a></li>                
+                        <li class="scroll active"><a href="../index.php">Home</a></li>                
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -141,7 +141,7 @@
 	</script>
 
 	<!-- CALL MAIN APP SCRIPT -->
-	<script src="/js/app.js"></script>
+	<script src="../public/js/app.js"></script>
 
 	<script src="../public/js/jquery.js"></script>
     <script src="../public/js/bootstrap.min.js"></script>
