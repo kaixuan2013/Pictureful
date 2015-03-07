@@ -1008,7 +1008,7 @@
     </section><!--/#bottom-->
 
         <!-- feedback -->
-    <section id="portfolio">
+    <section id="feedback">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Give me a Feedback</h2>
