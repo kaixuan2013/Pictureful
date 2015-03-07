@@ -753,7 +753,7 @@
                             <li>Filters</li>
                             <li>Live slideshow</li>
                             <li>Download album</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Try it Free!</a></li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="hashtag.php">Try it Free!</a></li>
                         </ul>
                     </div>
                 </div>
