@@ -1122,7 +1122,7 @@
         </div>
     </section>
 
-<!-- instagram hashtag search test -->
+<!-- onboarding video -->
     <section id="services">
         <div class="container">
             <div class="section-header">
@@ -1130,13 +1130,12 @@
                 <p class="text-center wow fadeInDown">Why we want you!</p>
             </div>
             <div class="row">
-                <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="http://youtu.be/yxHV1eVdNyI"></iframe>
+                    <div class="embed-responsive embed-responsive-4by3">
+                      <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/yxHV1eVdNyI" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  
     </section>
 
     <footer id="footer">
