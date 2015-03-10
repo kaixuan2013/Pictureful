@@ -1082,6 +1082,8 @@
                     </button>
 
                     <hr>
+                    Check out Group 9's application <a href="http://is429-sebastien.herokuapp.com/">here</a><br/>
+                    Check out Group 11's application <a href="https://airguitar.herokuapp.com/feedback.html">here</a><br/>
                     <input type="checkbox" ng-model="hide_table" ng-init="hide_table=false"> Show submitted feedback ({{ users.length }}).
                 </div>
                 
@@ -1124,17 +1126,14 @@
     <section id="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Grab Hashtag (for fun!)</h2>
-                <p class="text-center wow fadeInDown">Type in any hashtag and pictures associating with it will automagically appear!</p>
+                <h2 class="section-title text-center wow fadeInDown">Watch our Onboarding Video!</h2>
+                <p class="text-center wow fadeInDown">Why we want you!</p>
             </div>
             <div class="row">
-                <div id="w">
-                    <section id="sform">
-                        <small>Note: No spaces or punctuation allowed. Searches are limited to one(1) keyword.</small>
-                        <input type="text" id="s" name="s" class="sfield" placeholder="Enter a search tag..." autocomplete="off">
-                    </section>
-            
-                     <section id="photos"></section>
+                <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="http://youtu.be/yxHV1eVdNyI"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
